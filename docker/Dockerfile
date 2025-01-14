@@ -4,6 +4,7 @@ COPY . .
 RUN go mod download
 
 RUN go build -o ./main
+RUN sleep 3600
 
 ENV PORT 8081
 EXPOSE 8081
